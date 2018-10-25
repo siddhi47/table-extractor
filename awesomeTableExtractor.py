@@ -33,10 +33,9 @@ def didFind(xFile, xString,pageGreaterThan):
     # xString : the string to look for
     # pageGreaterThan : page offset
     import PyPDF2, re
-    PageFound = False
     pdfDoc = PyPDF2.PdfFileReader(open(xFile, "rb"))
     print('Number of pages:',pdfDoc.getNumPages())
-    for i in range(pageGreaterThan, pdfDoc.getNumPages()):
+    for i in range(pageGreaterThan, pageGreaterThan+1):
         content = ""
         content += pdfDoc.getPage(i).extractText() + "\n"
         content1 = content.encode('ascii', 'ignore').lower()
