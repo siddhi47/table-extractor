@@ -1,0 +1,12 @@
+1 install requirements
+	pip install -r requirements.txt (if you do not have pandas and numpy installed)
+	pip install -r requirements_mini.txt (if you have pandas and numpy installed)
+	(If you are using anaconda version of python, you will have pandas and numpy installed)
+2 Create a folder named storage
+
+3 run the code
+	python awesomeTableExtractor.py
+4 You will be prompted to enter the URL, string to match, filename to save the table in, and an offset (optional but highly recommended to use the offset.)
+
+5 remove temporary files ()
+	python remove.py
